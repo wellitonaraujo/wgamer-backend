@@ -7,7 +7,7 @@ import { router } from "./routes";
 
 const app = express();
 
-const port = 3332;
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(cors());
